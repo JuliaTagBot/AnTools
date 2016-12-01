@@ -1,7 +1,7 @@
 # Prima di tutto definisci la funzione che vuoi applicare
 
-funcs = (:getxy, :gethist, :getcum)
-
+# Add cumulative, histogram, local linear regression, kernel density etc!
+# Figure out how to use info of categorical vs non categorical variable!!
 function getxy(df, xvalue, x, y::Symbol)
     media = by(df, x) do dd
         DataFrame(m = mean(dd[y]))
