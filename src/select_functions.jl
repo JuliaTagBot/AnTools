@@ -14,3 +14,8 @@ function combine{T}(index, els::AbstractArray{T,1}, values)
     func = t -> (t in els)
     return combine(index, func, values)
 end
+
+function combine(index, el, values)
+    func = t -> (t == el)
+    return combine(index, func, values)
+end
