@@ -1,6 +1,8 @@
 module AnTools
 using DataFrames
+using Optim
+using StatsFuns
 
-include("analysis_functions.jl")
+include("comparative_glm.jl")
 include("select_functions.jl")
 end
