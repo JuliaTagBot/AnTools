@@ -1,8 +1,9 @@
 module AnTools
 using DataFrames
+using Distributions
 using Optim
-using StatsFuns
+using StatsFuns, StatsBase
 
-include("comparative_glm.jl")
-include("select_functions.jl")
+include("fitpoisson.jl")
+
 end
